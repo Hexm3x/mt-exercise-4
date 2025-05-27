@@ -2,40 +2,47 @@ name: "transformer_sample_config"
 joeynmt_version: "2.0.0"
 
 
-data:
-    train: "?"
-    dev:   "?"
-    test:  "?"
+data: # change if language / head changes
+    train: "nl-de/train_100k"
+    dev: "nl-de/dev_100k"
+    test: "nl-de/test_100k"
+
     dataset_type: "plain"
     src:
-        lang: "?"
-        level: "?"
+        lang: "nl"
+        level: "word"
         lowercase: False
         max_sent_length: 100
         # either use a vocabulary limit:
-        voc_limit: ?
+        voc_limit: 2000 # Whole_word
         # or (= not both!) a file with a vocabulary built before starting the training:
-        voc_file : "?"
-        tokenizer_type: "?"
-        tokenizer_cfg:
-            ?
+        # voc_file : "nl_de_bpe/joint_vocab.bpe" # BPE
+        tokenizer_type: "space"
+        # ChatGPT told me that this is not needed for the whole-word model
+        #tokenizer_cfg:
+        #    pretokenizer: "none"
+        #    num_merges: 3200
     trg: 
-        lang: "?"
-        level: "?"
+        lang: "de"
+        level: "word"
         lowercase: False
         max_sent_length: 100
         # either use a vocabulary limit:
-        voc_limit: ?
+        voc_limit: 2000 # Whole_word
         # or (= not both!) a file with a vocabulary built before starting the training:
-        voc_file : "?"
-        tokenizer_type: "?"
-        tokenizer_cfg:
-            ?
+        # voc_file : "nl_de_bpe/joint_vocab.bpe" # BPE
+        tokenizer_type: "space"
+        # ChatGPT told me that this is not needed for the whole-word model
+        #tokenizer_cfg:
+        #    pretokenizer: "none"
+        #    num_merges: 3200
 
 testing:
-    beam_size: ?
+    beam_size: 5
     alpha: 1.0
-
+    ckpt_path: models/word_level_new/19000.ckpt # the best checkpoint is inserted here as I do not have best.ckpt
+    output_path: logs/transformer_sample_config-test/hyp.txt # as test doesn't work, I use joeynmt translate and according to ChatGPT, I need to specify the output path in here
+    
 training:
     random_seed: 42
     optimizer: "adam"
@@ -54,13 +61,17 @@ training:
     validation_freq: 500
     logging_freq: 100
     eval_metric: "bleu"
-    model_dir: "?"
+    model_dir: "models/word_level_new" # reloading needed a new directory due to overwriting permissions
     overwrite: False
     shuffle: True
     use_cuda: False
     max_output_length: 100
     print_valid_sents: [0, 1, 2, 3, 4]
     label_smoothing: 0.3
+    # load_model: "models/word_level/2000.ckpt" # only need this when loading from an existing one (had to reload at some point)
+    # src_vocab: "models/word_level/src_vocab.txt" # only need this when loading from an existing one (had to reload at some point), as the vocabulary has already been built
+    # trg_vocab: "models/word_level/trg_vocab.txt" # only need this when loading from an existing one (had to reload at some point), as the vocabulary has already been built
+    save_latest_ckpt: true
 
 model:
     initializer: "xavier_uniform"
@@ -68,7 +79,7 @@ model:
     init_gain: 1.0
     embed_initializer: "xavier_uniform"
     embed_init_gain: 1.0
-    tied_embeddings: True
+    tied_embeddings: False # Whole_word vocabulary: False, BPE: TRUE
     tied_softmax: True
     encoder:
         type: "transformer"
