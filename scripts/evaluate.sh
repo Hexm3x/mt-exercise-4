@@ -85,7 +85,7 @@ mkdir -p $translations_sub
 CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python -m joeynmt translate $configs/$model_name2.yaml < $data/test_100k.$src > $translations_sub/test.$model_name2.$trg
 
 # compute case-sensitive BLEU 
-$2000=2000 #vocabulary size
+$2000=2004 #vocabulary size
 head -n $2000 $data/test_100k.$trg > $data/cut_$2000.$trg
 
 cat $translations_sub/test.$model_name2.$trg | sacrebleu $data/cut_$2000.$trg | tee $translations_sub/bleu.txt
