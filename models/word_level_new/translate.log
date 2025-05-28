@@ -110,3 +110,12 @@
 2025-05-28 18:20:15,847 - INFO - joeynmt.tokenizers - de tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
 2025-05-28 18:20:15,938 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
 2025-05-28 18:20:15,939 - INFO - joeynmt.prediction - Predicting 1779 example(s)... (Beam search with beam_size=4, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-28 18:27:30,146 - INFO - joeynmt.prediction - Generation took 434.1850[sec]. (No references given)
+2025-05-28 18:28:25,213 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-28 18:28:25,333 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-28 18:28:25,589 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-28 18:28:26,710 - INFO - joeynmt.helpers - Load model from /mnt/c/Users/Dieb/Desktop/mt-exercise-4/models/word_level_new/19000.ckpt.
+2025-05-28 18:28:26,743 - INFO - joeynmt.tokenizers - nl tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-28 18:28:26,744 - INFO - joeynmt.tokenizers - de tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-28 18:28:26,844 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-28 18:28:26,845 - INFO - joeynmt.prediction - Predicting 1779 example(s)... (Beam search with beam_size=5, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
