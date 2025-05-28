@@ -1,0 +1,10 @@
+model number: 1 time taken: 692
+model number: 2 time taken: 242
+model number: 3 time taken: 371
+model number: 4 time taken: 479
+model number: 5 time taken: 769
+model number: 6 time taken: 700
+model number: 7 time taken: 819
+model number: 8 time taken: 1047
+model number: 9 time taken: 1054
+model number: 10 time taken: 1266
