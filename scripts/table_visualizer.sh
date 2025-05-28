@@ -2,21 +2,31 @@
 
 scripts=$(dirname "$0")
 base=$scripts/..
+translations=translations
+models=models
 
-configs=$base/configs
+# Snippet by ChatGPT - only installing prettytable if not already installed
+if ! python3 -c "import prettytable" 2>/dev/null; then
+    pip install prettytable
+fi
 
-bleu_results=$base/bleu_results
-mkdir -p $bleu_results
-log="$bleu_results/log.txt"
+# config_name for word level:
+trans_con=transformer_sample_config
+# model names - change if needed
+model_word=word_level
+model1=model_name_BPE_1000
+model2=model_name_BPE_2000
 
-num_threads=4
+# word level
+filename_model_word=$models/$model_word/train.log
+filename_model_word_1=$translations/$trans_con/bleu.txt
 
-for fil in $configs/*.yaml; do
-    SECONDS=0
-    filename=$(basename "$fil" .yaml) # ChatGPT's work
-    python3 -m joeynmt test $fil --output_path $bleu_results/${filename}-bleu.txt # kind of ChatGPT as well - I did not know about {}
-    echo "Time taken for $filename:" $SECONDS "seconds" >> $log # append
-done
+# BPE 1000
+filename_model1=$models/$model1/train.log
+filename_model1_1=$translations/$model1/bleu.txt
 
-# Getting the BLEU scores table for all models
-# python3 BLEU_all_model.py
+# BPE 2000
+filename_model2=$models/$model2/train.log
+filename_model2_1=$translations/$model2/bleu.txt
+
+python3 $scripts/table_visualizer.py $filename_model_word $filename_model1 $filename_model2 $filename_model_word_1 $filename_model1_1 $filename_model2_1
