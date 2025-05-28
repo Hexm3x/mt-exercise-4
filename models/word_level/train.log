@@ -1,0 +1,287 @@
+2025-05-20 14:15:43,240 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-20 14:15:43,243 - INFO - joeynmt.helpers -                           cfg.name : transformer_sample_config
+2025-05-20 14:15:43,245 - INFO - joeynmt.helpers -                cfg.joeynmt_version : 2.0.0
+2025-05-20 14:15:43,247 - INFO - joeynmt.helpers -                     cfg.data.train : nl-de/train_100k
+2025-05-20 14:15:43,250 - INFO - joeynmt.helpers -                       cfg.data.dev : nl-de/dev_100k
+2025-05-20 14:15:43,254 - INFO - joeynmt.helpers -                      cfg.data.test : nl-de/test_100k
+2025-05-20 14:15:43,257 - INFO - joeynmt.helpers -              cfg.data.dataset_type : plain
+2025-05-20 14:15:43,258 - INFO - joeynmt.helpers -                  cfg.data.src.lang : nl
+2025-05-20 14:15:43,261 - INFO - joeynmt.helpers -                 cfg.data.src.level : word
+2025-05-20 14:15:43,262 - INFO - joeynmt.helpers -             cfg.data.src.lowercase : False
+2025-05-20 14:15:43,264 - INFO - joeynmt.helpers -       cfg.data.src.max_sent_length : 100
+2025-05-20 14:15:43,270 - INFO - joeynmt.helpers -             cfg.data.src.voc_limit : 2000
+2025-05-20 14:15:43,273 - INFO - joeynmt.helpers -        cfg.data.src.tokenizer_type : space
+2025-05-20 14:15:43,275 - INFO - joeynmt.helpers -                  cfg.data.trg.lang : de
+2025-05-20 14:15:43,276 - INFO - joeynmt.helpers -                 cfg.data.trg.level : word
+2025-05-20 14:15:43,278 - INFO - joeynmt.helpers -             cfg.data.trg.lowercase : False
+2025-05-20 14:15:43,279 - INFO - joeynmt.helpers -       cfg.data.trg.max_sent_length : 100
+2025-05-20 14:15:43,281 - INFO - joeynmt.helpers -             cfg.data.trg.voc_limit : 2000
+2025-05-20 14:15:43,286 - INFO - joeynmt.helpers -        cfg.data.trg.tokenizer_type : space
+2025-05-20 14:15:43,288 - INFO - joeynmt.helpers -              cfg.testing.beam_size : 5
+2025-05-20 14:15:43,290 - INFO - joeynmt.helpers -                  cfg.testing.alpha : 1.0
+2025-05-20 14:15:43,292 - INFO - joeynmt.helpers -           cfg.training.random_seed : 42
+2025-05-20 14:15:43,294 - INFO - joeynmt.helpers -             cfg.training.optimizer : adam
+2025-05-20 14:15:43,295 - INFO - joeynmt.helpers -         cfg.training.normalization : tokens
+2025-05-20 14:15:43,297 - INFO - joeynmt.helpers -         cfg.training.learning_rate : 0.0003
+2025-05-20 14:15:43,300 - INFO - joeynmt.helpers -            cfg.training.batch_size : 2048
+2025-05-20 14:15:43,303 - INFO - joeynmt.helpers -            cfg.training.batch_type : token
+2025-05-20 14:15:43,306 - INFO - joeynmt.helpers -       cfg.training.eval_batch_size : 1024
+2025-05-20 14:15:43,308 - INFO - joeynmt.helpers -       cfg.training.eval_batch_type : token
+2025-05-20 14:15:43,309 - INFO - joeynmt.helpers -            cfg.training.scheduling : plateau
+2025-05-20 14:15:43,310 - INFO - joeynmt.helpers -              cfg.training.patience : 8
+2025-05-20 14:15:43,312 - INFO - joeynmt.helpers -          cfg.training.weight_decay : 0.0
+2025-05-20 14:15:43,313 - INFO - joeynmt.helpers -       cfg.training.decrease_factor : 0.7
+2025-05-20 14:15:43,319 - INFO - joeynmt.helpers - cfg.training.early_stopping_metric : ppl
+2025-05-20 14:15:43,322 - INFO - joeynmt.helpers -                cfg.training.epochs : 10
+2025-05-20 14:15:43,325 - INFO - joeynmt.helpers -       cfg.training.validation_freq : 500
+2025-05-20 14:15:43,327 - INFO - joeynmt.helpers -          cfg.training.logging_freq : 100
+2025-05-20 14:15:43,328 - INFO - joeynmt.helpers -           cfg.training.eval_metric : bleu
+2025-05-20 14:15:43,330 - INFO - joeynmt.helpers -             cfg.training.model_dir : models/word_level
+2025-05-20 14:15:43,333 - INFO - joeynmt.helpers -             cfg.training.overwrite : False
+2025-05-20 14:15:43,336 - INFO - joeynmt.helpers -               cfg.training.shuffle : True
+2025-05-20 14:15:43,339 - INFO - joeynmt.helpers -              cfg.training.use_cuda : False
+2025-05-20 14:15:43,341 - INFO - joeynmt.helpers -     cfg.training.max_output_length : 100
+2025-05-20 14:15:43,342 - INFO - joeynmt.helpers -     cfg.training.print_valid_sents : [0, 1, 2, 3, 4]
+2025-05-20 14:15:43,344 - INFO - joeynmt.helpers -       cfg.training.label_smoothing : 0.3
+2025-05-20 14:15:43,346 - INFO - joeynmt.helpers -              cfg.model.initializer : xavier_uniform
+2025-05-20 14:15:43,350 - INFO - joeynmt.helpers -         cfg.model.bias_initializer : zeros
+2025-05-20 14:15:43,353 - INFO - joeynmt.helpers -                cfg.model.init_gain : 1.0
+2025-05-20 14:15:43,355 - INFO - joeynmt.helpers -        cfg.model.embed_initializer : xavier_uniform
+2025-05-20 14:15:43,358 - INFO - joeynmt.helpers -          cfg.model.embed_init_gain : 1.0
+2025-05-20 14:15:43,359 - INFO - joeynmt.helpers -          cfg.model.tied_embeddings : False
+2025-05-20 14:15:43,360 - INFO - joeynmt.helpers -             cfg.model.tied_softmax : True
+2025-05-20 14:15:43,362 - INFO - joeynmt.helpers -             cfg.model.encoder.type : transformer
+2025-05-20 14:15:43,365 - INFO - joeynmt.helpers -       cfg.model.encoder.num_layers : 4
+2025-05-20 14:15:43,370 - INFO - joeynmt.helpers -        cfg.model.encoder.num_heads : 2
+2025-05-20 14:15:43,372 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.embedding_dim : 256
+2025-05-20 14:15:43,373 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.scale : True
+2025-05-20 14:15:43,375 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.dropout : 0
+2025-05-20 14:15:43,377 - INFO - joeynmt.helpers -      cfg.model.encoder.hidden_size : 256
+2025-05-20 14:15:43,379 - INFO - joeynmt.helpers -          cfg.model.encoder.ff_size : 512
+2025-05-20 14:15:43,380 - INFO - joeynmt.helpers -          cfg.model.encoder.dropout : 0
+2025-05-20 14:15:43,383 - INFO - joeynmt.helpers -             cfg.model.decoder.type : transformer
+2025-05-20 14:15:43,388 - INFO - joeynmt.helpers -       cfg.model.decoder.num_layers : 1
+2025-05-20 14:15:43,389 - INFO - joeynmt.helpers -        cfg.model.decoder.num_heads : 2
+2025-05-20 14:15:43,391 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.embedding_dim : 256
+2025-05-20 14:15:43,393 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.scale : True
+2025-05-20 14:15:43,395 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.dropout : 0
+2025-05-20 14:15:43,397 - INFO - joeynmt.helpers -      cfg.model.decoder.hidden_size : 256
+2025-05-20 14:15:43,402 - INFO - joeynmt.helpers -          cfg.model.decoder.ff_size : 512
+2025-05-20 14:15:43,404 - INFO - joeynmt.helpers -          cfg.model.decoder.dropout : 0
+2025-05-20 14:15:43,592 - INFO - joeynmt.data - Building tokenizer...
+2025-05-20 14:15:43,594 - INFO - joeynmt.tokenizers - nl tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-20 14:15:43,595 - INFO - joeynmt.tokenizers - de tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-20 14:15:43,597 - INFO - joeynmt.data - Loading train set...
+2025-05-20 14:15:44,357 - INFO - joeynmt.data - Building vocabulary...
+2025-05-20 14:15:49,202 - INFO - joeynmt.data - Loading dev set...
+2025-05-20 14:15:49,261 - INFO - joeynmt.data - Loading test set...
+2025-05-20 14:15:49,335 - INFO - joeynmt.data - Data loaded.
+2025-05-20 14:15:49,337 - INFO - joeynmt.data - Train dataset: PlaintextDataset(split=train, len=100000, src_lang=nl, trg_lang=de, has_trg=True, random_subset=-1)
+2025-05-20 14:15:49,340 - INFO - joeynmt.data - Valid dataset: PlaintextDataset(split=dev, len=1001, src_lang=nl, trg_lang=de, has_trg=True, random_subset=-1)
+2025-05-20 14:15:49,342 - INFO - joeynmt.data -  Test dataset: PlaintextDataset(split=test, len=1779, src_lang=nl, trg_lang=de, has_trg=True, random_subset=-1)
+2025-05-20 14:15:49,345 - INFO - joeynmt.data - First training example:
+	[SRC] Al Gore over het afwenden van de klimaatcrisis
+	[TRG] Al Gore: Die Abwendung der Klimakatastrophe
+2025-05-20 14:15:49,349 - INFO - joeynmt.data - First 10 Src tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) de (5) een (6) het (7) van (8) en (9) dat
+2025-05-20 14:15:49,353 - INFO - joeynmt.data - First 10 Trg tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) die (5) und (6) der (7) in (8) das (9) zu
+2025-05-20 14:15:49,355 - INFO - joeynmt.data - Number of unique Src tokens (vocab_size): 2004
+2025-05-20 14:15:49,358 - INFO - joeynmt.data - Number of unique Trg tokens (vocab_size): 2004
+2025-05-20 14:15:49,404 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-20 14:15:54,844 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-20 14:15:54,928 - INFO - joeynmt.model - Total params: 3925248
+2025-05-20 14:15:54,930 - DEBUG - joeynmt.model - Trainable parameters: ['decoder.layers.0.dec_layer_norm.bias', 'decoder.layers.0.dec_layer_norm.weight', 'decoder.layers.0.feed_forward.layer_norm.bias', 'decoder.layers.0.feed_forward.layer_norm.weight', 'decoder.layers.0.feed_forward.pwff_layer.0.bias', 'decoder.layers.0.feed_forward.pwff_layer.0.weight', 'decoder.layers.0.feed_forward.pwff_layer.3.bias', 'decoder.layers.0.feed_forward.pwff_layer.3.weight', 'decoder.layers.0.src_trg_att.k_layer.bias', 'decoder.layers.0.src_trg_att.k_layer.weight', 'decoder.layers.0.src_trg_att.output_layer.bias', 'decoder.layers.0.src_trg_att.output_layer.weight', 'decoder.layers.0.src_trg_att.q_layer.bias', 'decoder.layers.0.src_trg_att.q_layer.weight', 'decoder.layers.0.src_trg_att.v_layer.bias', 'decoder.layers.0.src_trg_att.v_layer.weight', 'decoder.layers.0.trg_trg_att.k_layer.bias', 'decoder.layers.0.trg_trg_att.k_layer.weight', 'decoder.layers.0.trg_trg_att.output_layer.bias', 'decoder.layers.0.trg_trg_att.output_layer.weight', 'decoder.layers.0.trg_trg_att.q_layer.bias', 'decoder.layers.0.trg_trg_att.q_layer.weight', 'decoder.layers.0.trg_trg_att.v_layer.bias', 'decoder.layers.0.trg_trg_att.v_layer.weight', 'decoder.layers.0.x_layer_norm.bias', 'decoder.layers.0.x_layer_norm.weight', 'encoder.layers.0.feed_forward.layer_norm.bias', 'encoder.layers.0.feed_forward.layer_norm.weight', 'encoder.layers.0.feed_forward.pwff_layer.0.bias', 'encoder.layers.0.feed_forward.pwff_layer.0.weight', 'encoder.layers.0.feed_forward.pwff_layer.3.bias', 'encoder.layers.0.feed_forward.pwff_layer.3.weight', 'encoder.layers.0.layer_norm.bias', 'encoder.layers.0.layer_norm.weight', 'encoder.layers.0.src_src_att.k_layer.bias', 'encoder.layers.0.src_src_att.k_layer.weight', 'encoder.layers.0.src_src_att.output_layer.bias', 'encoder.layers.0.src_src_att.output_layer.weight', 'encoder.layers.0.src_src_att.q_layer.bias', 'encoder.layers.0.src_src_att.q_layer.weight', 'encoder.layers.0.src_src_att.v_layer.bias', 'encoder.layers.0.src_src_att.v_layer.weight', 'encoder.layers.1.feed_forward.layer_norm.bias', 'encoder.layers.1.feed_forward.layer_norm.weight', 'encoder.layers.1.feed_forward.pwff_layer.0.bias', 'encoder.layers.1.feed_forward.pwff_layer.0.weight', 'encoder.layers.1.feed_forward.pwff_layer.3.bias', 'encoder.layers.1.feed_forward.pwff_layer.3.weight', 'encoder.layers.1.layer_norm.bias', 'encoder.layers.1.layer_norm.weight', 'encoder.layers.1.src_src_att.k_layer.bias', 'encoder.layers.1.src_src_att.k_layer.weight', 'encoder.layers.1.src_src_att.output_layer.bias', 'encoder.layers.1.src_src_att.output_layer.weight', 'encoder.layers.1.src_src_att.q_layer.bias', 'encoder.layers.1.src_src_att.q_layer.weight', 'encoder.layers.1.src_src_att.v_layer.bias', 'encoder.layers.1.src_src_att.v_layer.weight', 'encoder.layers.2.feed_forward.layer_norm.bias', 'encoder.layers.2.feed_forward.layer_norm.weight', 'encoder.layers.2.feed_forward.pwff_layer.0.bias', 'encoder.layers.2.feed_forward.pwff_layer.0.weight', 'encoder.layers.2.feed_forward.pwff_layer.3.bias', 'encoder.layers.2.feed_forward.pwff_layer.3.weight', 'encoder.layers.2.layer_norm.bias', 'encoder.layers.2.layer_norm.weight', 'encoder.layers.2.src_src_att.k_layer.bias', 'encoder.layers.2.src_src_att.k_layer.weight', 'encoder.layers.2.src_src_att.output_layer.bias', 'encoder.layers.2.src_src_att.output_layer.weight', 'encoder.layers.2.src_src_att.q_layer.bias', 'encoder.layers.2.src_src_att.q_layer.weight', 'encoder.layers.2.src_src_att.v_layer.bias', 'encoder.layers.2.src_src_att.v_layer.weight', 'encoder.layers.3.feed_forward.layer_norm.bias', 'encoder.layers.3.feed_forward.layer_norm.weight', 'encoder.layers.3.feed_forward.pwff_layer.0.bias', 'encoder.layers.3.feed_forward.pwff_layer.0.weight', 'encoder.layers.3.feed_forward.pwff_layer.3.bias', 'encoder.layers.3.feed_forward.pwff_layer.3.weight', 'encoder.layers.3.layer_norm.bias', 'encoder.layers.3.layer_norm.weight', 'encoder.layers.3.src_src_att.k_layer.bias', 'encoder.layers.3.src_src_att.k_layer.weight', 'encoder.layers.3.src_src_att.output_layer.bias', 'encoder.layers.3.src_src_att.output_layer.weight', 'encoder.layers.3.src_src_att.q_layer.bias', 'encoder.layers.3.src_src_att.q_layer.weight', 'encoder.layers.3.src_src_att.v_layer.bias', 'encoder.layers.3.src_src_att.v_layer.weight', 'src_embed.lut.weight', 'trg_embed.lut.weight']
+2025-05-20 14:15:54,932 - INFO - joeynmt.training - Model(
+	encoder=TransformerEncoder(num_layers=4, num_heads=2, alpha=1.0, layer_norm="pre", activation=ReLU()),
+	decoder=TransformerDecoder(num_layers=1, num_heads=2, alpha=1.0, layer_norm="post", activation=ReLU()),
+	src_embed=Embeddings(embedding_dim=256, vocab_size=2004),
+	trg_embed=Embeddings(embedding_dim=256, vocab_size=2004),
+	loss_function=XentLoss(criterion=KLDivLoss(), smoothing=0.3))
+2025-05-20 14:15:54,935 - INFO - joeynmt.builders - Adam(lr=0.0003, weight_decay=0.0, betas=(0.9, 0.999))
+2025-05-20 14:15:54,936 - INFO - joeynmt.builders - ReduceLROnPlateau(mode=min, verbose=False, threshold_mode=abs, eps=0.0, factor=0.7, patience=8)
+2025-05-20 14:15:54,938 - INFO - joeynmt.training - Train stats:
+	device: cpu
+	n_gpu: 0
+	16-bits training: False
+	gradient accumulation: 1
+	batch size per device: 2048
+	effective batch size (w. parallel & accumulation): 2048
+2025-05-20 14:15:54,940 - INFO - joeynmt.training - EPOCH 1
+2025-05-20 14:21:05,820 - INFO - joeynmt.training - Epoch   1, Step:      100, Batch Loss:     2.977278, Batch Acc: 0.260107, Tokens per Sec:      213, Lr: 0.000300
+2025-05-20 14:27:08,709 - INFO - joeynmt.training - Epoch   1, Step:      200, Batch Loss:     2.877597, Batch Acc: 0.292084, Tokens per Sec:      180, Lr: 0.000300
+2025-05-20 14:31:58,431 - INFO - joeynmt.training - Epoch   1, Step:      300, Batch Loss:     2.781978, Batch Acc: 0.312196, Tokens per Sec:      231, Lr: 0.000300
+2025-05-20 14:36:46,252 - INFO - joeynmt.training - Epoch   1, Step:      400, Batch Loss:     2.615726, Batch Acc: 0.327649, Tokens per Sec:      231, Lr: 0.000300
+2025-05-20 14:41:15,768 - INFO - joeynmt.training - Epoch   1, Step:      500, Batch Loss:     2.459278, Batch Acc: 0.340544, Tokens per Sec:      240, Lr: 0.000300
+2025-05-20 14:41:15,770 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-20 14:41:15,771 - INFO - joeynmt.prediction - Predicting 1001 example(s)... (Greedy decoding with min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-20 14:50:07,651 - INFO - joeynmt.prediction - Evaluation result (greedy) loss:   2.59, ppl:  13.33, acc:   0.33, generation: 531.8611[sec], evaluation: 0.0000[sec]
+2025-05-20 14:50:07,654 - INFO - joeynmt.training - Hooray! New best validation result [ppl]!
+2025-05-20 14:50:09,306 - INFO - joeynmt.training - Example #0
+2025-05-20 14:50:09,308 - DEBUG - joeynmt.training - 	Tokenized source:     ['Vorig', 'jaar', 'liet', 'ik', 'deze', 'twee', "dia's", 'zien', 'om', 'aan', '', 'te', 'tonen', 'dat', 'de', 'poolijskap,', '', 'die', 'de', 'afgelopen', 'drie', 'miljoen', 'jaar', '', 'ongeveer', 'de', 'grootte', 'had', 'van', 'het', 'vasteland', 'van', 'de', 'VS,', '', 'met', '40%', 'gekrompen', 'was.']
+2025-05-20 14:50:09,309 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Letztes', 'Jahr', 'habe', 'ich', 'diese', 'beiden', 'Folien', 'gezeigt,', 'um', 'zu', 'veranschaulichen,', 'dass', 'die', 'arktische', 'Eiskappe,', 'die', 'für', 'annähernd', 'drei', 'Millionen', 'Jahre', 'die', 'Grösse', 'der', 'unteren', '48', 'Staaten', 'hatte,', 'um', '40', 'Prozent', 'geschrumpft', 'ist.']
+2025-05-20 14:50:09,310 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['<unk>', '<unk>', 'ich', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 14:50:09,312 - INFO - joeynmt.training - 	Source:     Vorig jaar liet ik deze twee dia's zien om aan  te tonen dat de poolijskap,  die de afgelopen drie miljoen jaar  ongeveer de grootte had van het vasteland van de VS,  met 40% gekrompen was.
+2025-05-20 14:50:09,314 - INFO - joeynmt.training - 	Reference:  Letztes Jahr habe ich diese beiden Folien gezeigt, um zu veranschaulichen, dass die arktische Eiskappe, die für annähernd drei Millionen Jahre die Grösse der unteren 48 Staaten hatte, um 40 Prozent geschrumpft ist.
+2025-05-20 14:50:09,317 - INFO - joeynmt.training - 	Hypothesis: <unk> <unk> ich <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2025-05-20 14:50:09,321 - INFO - joeynmt.training - Example #1
+2025-05-20 14:50:09,323 - DEBUG - joeynmt.training - 	Tokenized source:     ['Maar', 'dit', 'onderschat', 'eigenlijk', 'de', 'ernst', 'van', 'dit', 'specifieke', 'probleem', '', 'omdat', 'het', 'niet', 'de', 'dikte', 'van', 'het', 'ijs', 'laat', 'zien.']
+2025-05-20 14:50:09,324 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Aber', 'dies', 'drückt', 'nicht', 'stark', 'genug', 'die', 'Ernsthaftigkeit', 'dieses', 'speziellen', 'Problems', 'aus,', 'da', 'es', 'nicht', 'die', 'Dicke', 'des', 'Eises', 'zeigt.']
+2025-05-20 14:50:09,325 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Aber', 'das', 'ist', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 14:50:09,326 - INFO - joeynmt.training - 	Source:     Maar dit onderschat eigenlijk de ernst van dit specifieke probleem  omdat het niet de dikte van het ijs laat zien.
+2025-05-20 14:50:09,328 - INFO - joeynmt.training - 	Reference:  Aber dies drückt nicht stark genug die Ernsthaftigkeit dieses speziellen Problems aus, da es nicht die Dicke des Eises zeigt.
+2025-05-20 14:50:09,329 - INFO - joeynmt.training - 	Hypothesis: Aber das ist <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2025-05-20 14:50:09,331 - INFO - joeynmt.training - Example #2
+2025-05-20 14:50:09,332 - DEBUG - joeynmt.training - 	Tokenized source:     ['De', 'ijskap', 'op', 'de', 'Noordpool', 'is', 'in', 'zekere', 'zin', '', 'het', 'kloppend', 'hart', 'van', 'ons', 'globaal', 'klimaatsysteem.']
+2025-05-20 14:50:09,333 - DEBUG - joeynmt.training - 	Tokenized reference:  ['In', 'gewissem', 'Sinne', 'ist', 'die', 'arktische', 'Eiskappe', 'das', 'schlagende', 'Herz', 'unseres', 'globalen', 'Klimasystems.']
+2025-05-20 14:50:09,334 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Die', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 14:50:09,338 - INFO - joeynmt.training - 	Source:     De ijskap op de Noordpool is in zekere zin  het kloppend hart van ons globaal klimaatsysteem.
+2025-05-20 14:50:09,340 - INFO - joeynmt.training - 	Reference:  In gewissem Sinne ist die arktische Eiskappe das schlagende Herz unseres globalen Klimasystems.
+2025-05-20 14:50:09,341 - INFO - joeynmt.training - 	Hypothesis: Die <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2025-05-20 14:50:09,343 - INFO - joeynmt.training - Example #3
+2025-05-20 14:50:09,344 - DEBUG - joeynmt.training - 	Tokenized source:     ['Het', 'zet', 'uit', 'in', 'de', 'winter', 'en', 'krimpt', 'in', 'de', 'zomer.']
+2025-05-20 14:50:09,345 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Sie', 'wächst', 'im', 'Winter', 'und', 'schrumpft', 'im', 'Sommer.']
+2025-05-20 14:50:09,346 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Es', 'gibt', '<unk>', 'in', 'der', '<unk>', 'und', '<unk>', '<unk>', '</s>']
+2025-05-20 14:50:09,348 - INFO - joeynmt.training - 	Source:     Het zet uit in de winter en krimpt in de zomer.
+2025-05-20 14:50:09,349 - INFO - joeynmt.training - 	Reference:  Sie wächst im Winter und schrumpft im Sommer.
+2025-05-20 14:50:09,350 - INFO - joeynmt.training - 	Hypothesis: Es gibt <unk> in der <unk> und <unk> <unk>
+2025-05-20 14:50:09,352 - INFO - joeynmt.training - Example #4
+2025-05-20 14:50:09,354 - DEBUG - joeynmt.training - 	Tokenized source:     ['De', 'volgende', 'dia', 'die', 'ik', 'laat', 'zien', '', 'is', 'een', 'versnelde', 'versie', 'van', 'wat', 'er', 'de', 'afgelopen', '25', 'jaar', 'is', 'gebeurd.']
+2025-05-20 14:50:09,355 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Die', 'nächste', 'Folie,', 'die', 'ich', 'Ihnen', 'zeige,', 'ist', 'eine', 'Zeitrafferaufnahme', 'was', 'in', 'den', 'letzten', '25', 'Jahren', 'passiert', 'ist.']
+2025-05-20 14:50:09,356 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Die', '<unk>', '<unk>', 'die', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', 'was', 'es', 'ist', '<unk>', 'was', 'es', 'ist', 'die', '<unk>', '<unk>', '</s>']
+2025-05-20 14:50:09,357 - INFO - joeynmt.training - 	Source:     De volgende dia die ik laat zien  is een versnelde versie van wat er de afgelopen 25 jaar is gebeurd.
+2025-05-20 14:50:09,358 - INFO - joeynmt.training - 	Reference:  Die nächste Folie, die ich Ihnen zeige, ist eine Zeitrafferaufnahme was in den letzten 25 Jahren passiert ist.
+2025-05-20 14:50:09,359 - INFO - joeynmt.training - 	Hypothesis: Die <unk> <unk> die <unk> <unk> <unk> <unk> <unk> <unk> was es ist <unk> was es ist die <unk> <unk>
+2025-05-20 14:54:22,355 - INFO - joeynmt.training - Epoch   1, Step:      600, Batch Loss:     2.441798, Batch Acc: 0.349154, Tokens per Sec:      254, Lr: 0.000300
+2025-05-20 14:58:32,895 - INFO - joeynmt.training - Epoch   1, Step:      700, Batch Loss:     2.434477, Batch Acc: 0.354412, Tokens per Sec:      257, Lr: 0.000300
+2025-05-20 15:02:45,472 - INFO - joeynmt.training - Epoch   1, Step:      800, Batch Loss:     2.382665, Batch Acc: 0.359236, Tokens per Sec:      259, Lr: 0.000300
+2025-05-20 15:06:53,141 - INFO - joeynmt.training - Epoch   1, Step:      900, Batch Loss:     2.375706, Batch Acc: 0.367629, Tokens per Sec:      265, Lr: 0.000300
+2025-05-20 15:10:56,833 - INFO - joeynmt.training - Epoch   1, Step:     1000, Batch Loss:     2.299870, Batch Acc: 0.374439, Tokens per Sec:      269, Lr: 0.000300
+2025-05-20 15:10:56,835 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-20 15:10:56,837 - INFO - joeynmt.prediction - Predicting 1001 example(s)... (Greedy decoding with min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-20 15:18:57,033 - INFO - joeynmt.prediction - Evaluation result (greedy) loss:   2.41, ppl:  11.10, acc:   0.35, generation: 480.1814[sec], evaluation: 0.0000[sec]
+2025-05-20 15:18:57,035 - INFO - joeynmt.training - Hooray! New best validation result [ppl]!
+2025-05-20 15:19:02,083 - INFO - joeynmt.training - Example #0
+2025-05-20 15:19:02,084 - DEBUG - joeynmt.training - 	Tokenized source:     ['Vorig', 'jaar', 'liet', 'ik', 'deze', 'twee', "dia's", 'zien', 'om', 'aan', '', 'te', 'tonen', 'dat', 'de', 'poolijskap,', '', 'die', 'de', 'afgelopen', 'drie', 'miljoen', 'jaar', '', 'ongeveer', 'de', 'grootte', 'had', 'van', 'het', 'vasteland', 'van', 'de', 'VS,', '', 'met', '40%', 'gekrompen', 'was.']
+2025-05-20 15:19:02,085 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Letztes', 'Jahr', 'habe', 'ich', 'diese', 'beiden', 'Folien', 'gezeigt,', 'um', 'zu', 'veranschaulichen,', 'dass', 'die', 'arktische', 'Eiskappe,', 'die', 'für', 'annähernd', 'drei', 'Millionen', 'Jahre', 'die', 'Grösse', 'der', 'unteren', '48', 'Staaten', 'hatte,', 'um', '40', 'Prozent', 'geschrumpft', 'ist.']
+2025-05-20 15:19:02,087 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['<unk>', '<unk>', 'ich', 'diese', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 15:19:02,090 - INFO - joeynmt.training - 	Source:     Vorig jaar liet ik deze twee dia's zien om aan  te tonen dat de poolijskap,  die de afgelopen drie miljoen jaar  ongeveer de grootte had van het vasteland van de VS,  met 40% gekrompen was.
+2025-05-20 15:19:02,092 - INFO - joeynmt.training - 	Reference:  Letztes Jahr habe ich diese beiden Folien gezeigt, um zu veranschaulichen, dass die arktische Eiskappe, die für annähernd drei Millionen Jahre die Grösse der unteren 48 Staaten hatte, um 40 Prozent geschrumpft ist.
+2025-05-20 15:19:02,093 - INFO - joeynmt.training - 	Hypothesis: <unk> <unk> ich diese <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2025-05-20 15:19:02,095 - INFO - joeynmt.training - Example #1
+2025-05-20 15:19:02,096 - DEBUG - joeynmt.training - 	Tokenized source:     ['Maar', 'dit', 'onderschat', 'eigenlijk', 'de', 'ernst', 'van', 'dit', 'specifieke', 'probleem', '', 'omdat', 'het', 'niet', 'de', 'dikte', 'van', 'het', 'ijs', 'laat', 'zien.']
+2025-05-20 15:19:02,097 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Aber', 'dies', 'drückt', 'nicht', 'stark', 'genug', 'die', 'Ernsthaftigkeit', 'dieses', 'speziellen', 'Problems', 'aus,', 'da', 'es', 'nicht', 'die', 'Dicke', 'des', 'Eises', 'zeigt.']
+2025-05-20 15:19:02,098 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Aber', 'das', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', 'weil', 'es', 'es', 'nicht', '<unk>', 'des', '<unk>', '</s>']
+2025-05-20 15:19:02,100 - INFO - joeynmt.training - 	Source:     Maar dit onderschat eigenlijk de ernst van dit specifieke probleem  omdat het niet de dikte van het ijs laat zien.
+2025-05-20 15:19:02,101 - INFO - joeynmt.training - 	Reference:  Aber dies drückt nicht stark genug die Ernsthaftigkeit dieses speziellen Problems aus, da es nicht die Dicke des Eises zeigt.
+2025-05-20 15:19:02,103 - INFO - joeynmt.training - 	Hypothesis: Aber das <unk> <unk> <unk> <unk> <unk> <unk> <unk> weil es es nicht <unk> des <unk>
+2025-05-20 15:19:02,104 - INFO - joeynmt.training - Example #2
+2025-05-20 15:19:02,105 - DEBUG - joeynmt.training - 	Tokenized source:     ['De', 'ijskap', 'op', 'de', 'Noordpool', 'is', 'in', 'zekere', 'zin', '', 'het', 'kloppend', 'hart', 'van', 'ons', 'globaal', 'klimaatsysteem.']
+2025-05-20 15:19:02,106 - DEBUG - joeynmt.training - 	Tokenized reference:  ['In', 'gewissem', 'Sinne', 'ist', 'die', 'arktische', 'Eiskappe', 'das', 'schlagende', 'Herz', 'unseres', 'globalen', 'Klimasystems.']
+2025-05-20 15:19:02,107 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Die', '<unk>', 'auf', 'der', '<unk>', 'ist', 'in', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 15:19:02,109 - INFO - joeynmt.training - 	Source:     De ijskap op de Noordpool is in zekere zin  het kloppend hart van ons globaal klimaatsysteem.
+2025-05-20 15:19:02,110 - INFO - joeynmt.training - 	Reference:  In gewissem Sinne ist die arktische Eiskappe das schlagende Herz unseres globalen Klimasystems.
+2025-05-20 15:19:02,112 - INFO - joeynmt.training - 	Hypothesis: Die <unk> auf der <unk> ist in <unk> <unk> <unk> <unk> <unk>
+2025-05-20 15:19:02,113 - INFO - joeynmt.training - Example #3
+2025-05-20 15:19:02,114 - DEBUG - joeynmt.training - 	Tokenized source:     ['Het', 'zet', 'uit', 'in', 'de', 'winter', 'en', 'krimpt', 'in', 'de', 'zomer.']
+2025-05-20 15:19:02,115 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Sie', 'wächst', 'im', 'Winter', 'und', 'schrumpft', 'im', 'Sommer.']
+2025-05-20 15:19:02,116 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Es', '<unk>', '<unk>', '<unk>', 'und', '<unk>', 'in', 'den', '<unk>', '</s>']
+2025-05-20 15:19:02,117 - INFO - joeynmt.training - 	Source:     Het zet uit in de winter en krimpt in de zomer.
+2025-05-20 15:19:02,118 - INFO - joeynmt.training - 	Reference:  Sie wächst im Winter und schrumpft im Sommer.
+2025-05-20 15:19:02,119 - INFO - joeynmt.training - 	Hypothesis: Es <unk> <unk> <unk> und <unk> in den <unk>
+2025-05-20 15:19:02,120 - INFO - joeynmt.training - Example #4
+2025-05-20 15:19:02,121 - DEBUG - joeynmt.training - 	Tokenized source:     ['De', 'volgende', 'dia', 'die', 'ik', 'laat', 'zien', '', 'is', 'een', 'versnelde', 'versie', 'van', 'wat', 'er', 'de', 'afgelopen', '25', 'jaar', 'is', 'gebeurd.']
+2025-05-20 15:19:02,122 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Die', 'nächste', 'Folie,', 'die', 'ich', 'Ihnen', 'zeige,', 'ist', 'eine', 'Zeitrafferaufnahme', 'was', 'in', 'den', 'letzten', '25', 'Jahren', 'passiert', 'ist.']
+2025-05-20 15:19:02,122 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Die', '<unk>', '<unk>', 'die', 'ich', '<unk>', '<unk>', '<unk>', 'ist', 'ein', '<unk>', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 15:19:02,124 - INFO - joeynmt.training - 	Source:     De volgende dia die ik laat zien  is een versnelde versie van wat er de afgelopen 25 jaar is gebeurd.
+2025-05-20 15:19:02,125 - INFO - joeynmt.training - 	Reference:  Die nächste Folie, die ich Ihnen zeige, ist eine Zeitrafferaufnahme was in den letzten 25 Jahren passiert ist.
+2025-05-20 15:19:02,126 - INFO - joeynmt.training - 	Hypothesis: Die <unk> <unk> die ich <unk> <unk> <unk> ist ein <unk> <unk> <unk> <unk>
+2025-05-20 15:23:15,205 - INFO - joeynmt.training - Epoch   1, Step:     1100, Batch Loss:     2.253978, Batch Acc: 0.381173, Tokens per Sec:      257, Lr: 0.000300
+2025-05-20 15:52:02,142 - INFO - joeynmt.training - Epoch   1, Step:     1200, Batch Loss:     2.108105, Batch Acc: 0.381930, Tokens per Sec:       39, Lr: 0.000300
+2025-05-20 15:56:20,282 - INFO - joeynmt.training - Epoch   1, Step:     1300, Batch Loss:     2.154698, Batch Acc: 0.390557, Tokens per Sec:      255, Lr: 0.000300
+2025-05-20 16:00:32,798 - INFO - joeynmt.training - Epoch   1, Step:     1400, Batch Loss:     2.189257, Batch Acc: 0.392345, Tokens per Sec:      259, Lr: 0.000300
+2025-05-20 16:04:41,699 - INFO - joeynmt.training - Epoch   1, Step:     1500, Batch Loss:     2.012173, Batch Acc: 0.398845, Tokens per Sec:      267, Lr: 0.000300
+2025-05-20 16:04:41,701 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-20 16:04:41,702 - INFO - joeynmt.prediction - Predicting 1001 example(s)... (Greedy decoding with min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-20 16:11:00,449 - INFO - joeynmt.prediction - Evaluation result (greedy) loss:   2.29, ppl:   9.88, acc:   0.37, generation: 378.7318[sec], evaluation: 0.0000[sec]
+2025-05-20 16:11:00,451 - INFO - joeynmt.training - Hooray! New best validation result [ppl]!
+2025-05-20 16:11:04,184 - INFO - joeynmt.training - Example #0
+2025-05-20 16:11:04,187 - DEBUG - joeynmt.training - 	Tokenized source:     ['Vorig', 'jaar', 'liet', 'ik', 'deze', 'twee', "dia's", 'zien', 'om', 'aan', '', 'te', 'tonen', 'dat', 'de', 'poolijskap,', '', 'die', 'de', 'afgelopen', 'drie', 'miljoen', 'jaar', '', 'ongeveer', 'de', 'grootte', 'had', 'van', 'het', 'vasteland', 'van', 'de', 'VS,', '', 'met', '40%', 'gekrompen', 'was.']
+2025-05-20 16:11:04,274 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Letztes', 'Jahr', 'habe', 'ich', 'diese', 'beiden', 'Folien', 'gezeigt,', 'um', 'zu', 'veranschaulichen,', 'dass', 'die', 'arktische', 'Eiskappe,', 'die', 'für', 'annähernd', 'drei', 'Millionen', 'Jahre', 'die', 'Grösse', 'der', 'unteren', '48', 'Staaten', 'hatte,', 'um', '40', 'Prozent', 'geschrumpft', 'ist.']
+2025-05-20 16:11:04,287 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['<unk>', 'Jahre', '<unk>', 'ich', 'diese', 'zwei', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 16:11:04,289 - INFO - joeynmt.training - 	Source:     Vorig jaar liet ik deze twee dia's zien om aan  te tonen dat de poolijskap,  die de afgelopen drie miljoen jaar  ongeveer de grootte had van het vasteland van de VS,  met 40% gekrompen was.
+2025-05-20 16:11:04,292 - INFO - joeynmt.training - 	Reference:  Letztes Jahr habe ich diese beiden Folien gezeigt, um zu veranschaulichen, dass die arktische Eiskappe, die für annähernd drei Millionen Jahre die Grösse der unteren 48 Staaten hatte, um 40 Prozent geschrumpft ist.
+2025-05-20 16:11:04,387 - INFO - joeynmt.training - 	Hypothesis: <unk> Jahre <unk> ich diese zwei <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2025-05-20 16:11:04,481 - INFO - joeynmt.training - Example #1
+2025-05-20 16:11:04,484 - DEBUG - joeynmt.training - 	Tokenized source:     ['Maar', 'dit', 'onderschat', 'eigenlijk', 'de', 'ernst', 'van', 'dit', 'specifieke', 'probleem', '', 'omdat', 'het', 'niet', 'de', 'dikte', 'van', 'het', 'ijs', 'laat', 'zien.']
+2025-05-20 16:11:04,485 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Aber', 'dies', 'drückt', 'nicht', 'stark', 'genug', 'die', 'Ernsthaftigkeit', 'dieses', 'speziellen', 'Problems', 'aus,', 'da', 'es', 'nicht', 'die', 'Dicke', 'des', 'Eises', 'zeigt.']
+2025-05-20 16:11:04,573 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Aber', 'das', '<unk>', '<unk>', '<unk>', 'der', '<unk>', '<unk>', '<unk>', '<unk>', 'weil', 'es', 'nicht', 'die', '<unk>', 'des', '<unk>', '</s>']
+2025-05-20 16:11:04,576 - INFO - joeynmt.training - 	Source:     Maar dit onderschat eigenlijk de ernst van dit specifieke probleem  omdat het niet de dikte van het ijs laat zien.
+2025-05-20 16:11:04,645 - INFO - joeynmt.training - 	Reference:  Aber dies drückt nicht stark genug die Ernsthaftigkeit dieses speziellen Problems aus, da es nicht die Dicke des Eises zeigt.
+2025-05-20 16:11:04,648 - INFO - joeynmt.training - 	Hypothesis: Aber das <unk> <unk> <unk> der <unk> <unk> <unk> <unk> weil es nicht die <unk> des <unk>
+2025-05-20 16:11:04,650 - INFO - joeynmt.training - Example #2
+2025-05-20 16:11:04,653 - DEBUG - joeynmt.training - 	Tokenized source:     ['De', 'ijskap', 'op', 'de', 'Noordpool', 'is', 'in', 'zekere', 'zin', '', 'het', 'kloppend', 'hart', 'van', 'ons', 'globaal', 'klimaatsysteem.']
+2025-05-20 16:11:04,655 - DEBUG - joeynmt.training - 	Tokenized reference:  ['In', 'gewissem', 'Sinne', 'ist', 'die', 'arktische', 'Eiskappe', 'das', 'schlagende', 'Herz', 'unseres', 'globalen', 'Klimasystems.']
+2025-05-20 16:11:04,656 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Die', '<unk>', 'auf', 'der', '<unk>', 'ist', 'in', '<unk>', '', '', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 16:11:04,659 - INFO - joeynmt.training - 	Source:     De ijskap op de Noordpool is in zekere zin  het kloppend hart van ons globaal klimaatsysteem.
+2025-05-20 16:11:04,661 - INFO - joeynmt.training - 	Reference:  In gewissem Sinne ist die arktische Eiskappe das schlagende Herz unseres globalen Klimasystems.
+2025-05-20 16:11:04,664 - INFO - joeynmt.training - 	Hypothesis: Die <unk> auf der <unk> ist in <unk>   <unk> <unk> <unk>
+2025-05-20 16:11:04,666 - INFO - joeynmt.training - Example #3
+2025-05-20 16:11:04,669 - DEBUG - joeynmt.training - 	Tokenized source:     ['Het', 'zet', 'uit', 'in', 'de', 'winter', 'en', 'krimpt', 'in', 'de', 'zomer.']
+2025-05-20 16:11:04,671 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Sie', 'wächst', 'im', 'Winter', 'und', 'schrumpft', 'im', 'Sommer.']
+2025-05-20 16:11:04,672 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Es', '<unk>', 'aus', 'der', '<unk>', 'und', '<unk>', 'in', 'der', '<unk>', '</s>']
+2025-05-20 16:11:04,675 - INFO - joeynmt.training - 	Source:     Het zet uit in de winter en krimpt in de zomer.
+2025-05-20 16:11:04,677 - INFO - joeynmt.training - 	Reference:  Sie wächst im Winter und schrumpft im Sommer.
+2025-05-20 16:11:04,680 - INFO - joeynmt.training - 	Hypothesis: Es <unk> aus der <unk> und <unk> in der <unk>
+2025-05-20 16:11:04,682 - INFO - joeynmt.training - Example #4
+2025-05-20 16:11:04,685 - DEBUG - joeynmt.training - 	Tokenized source:     ['De', 'volgende', 'dia', 'die', 'ik', 'laat', 'zien', '', 'is', 'een', 'versnelde', 'versie', 'van', 'wat', 'er', 'de', 'afgelopen', '25', 'jaar', 'is', 'gebeurd.']
+2025-05-20 16:11:04,686 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Die', 'nächste', 'Folie,', 'die', 'ich', 'Ihnen', 'zeige,', 'ist', 'eine', 'Zeitrafferaufnahme', 'was', 'in', 'den', 'letzten', '25', 'Jahren', 'passiert', 'ist.']
+2025-05-20 16:11:04,687 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Die', 'nächste', '<unk>', 'die', 'ich', '<unk>', '<unk>', '', 'ist', 'eine', '<unk>', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 16:11:04,688 - INFO - joeynmt.training - 	Source:     De volgende dia die ik laat zien  is een versnelde versie van wat er de afgelopen 25 jaar is gebeurd.
+2025-05-20 16:11:04,690 - INFO - joeynmt.training - 	Reference:  Die nächste Folie, die ich Ihnen zeige, ist eine Zeitrafferaufnahme was in den letzten 25 Jahren passiert ist.
+2025-05-20 16:11:04,692 - INFO - joeynmt.training - 	Hypothesis: Die nächste <unk> die ich <unk> <unk>  ist eine <unk> <unk> <unk> <unk>
+2025-05-20 16:15:12,606 - INFO - joeynmt.training - Epoch   1, Step:     1600, Batch Loss:     2.142462, Batch Acc: 0.400881, Tokens per Sec:      266, Lr: 0.000300
+2025-05-20 16:19:20,902 - INFO - joeynmt.training - Epoch   1, Step:     1700, Batch Loss:     2.195363, Batch Acc: 0.405833, Tokens per Sec:      259, Lr: 0.000300
+2025-05-20 16:23:45,950 - INFO - joeynmt.training - Epoch   1, Step:     1800, Batch Loss:     2.040761, Batch Acc: 0.414958, Tokens per Sec:      254, Lr: 0.000300
+2025-05-20 16:28:03,215 - INFO - joeynmt.training - Epoch   1, Step:     1900, Batch Loss:     2.018828, Batch Acc: 0.415109, Tokens per Sec:      261, Lr: 0.000300
+2025-05-20 16:32:17,175 - INFO - joeynmt.training - Epoch   1, Step:     2000, Batch Loss:     1.867728, Batch Acc: 0.414919, Tokens per Sec:      262, Lr: 0.000300
+2025-05-20 16:32:17,177 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-20 16:32:17,178 - INFO - joeynmt.prediction - Predicting 1001 example(s)... (Greedy decoding with min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-20 16:35:12,825 - INFO - joeynmt.prediction - Evaluation result (greedy) loss:   2.19, ppl:   8.93, acc:   0.39, generation: 175.6316[sec], evaluation: 0.0000[sec]
+2025-05-20 16:35:12,827 - INFO - joeynmt.training - Hooray! New best validation result [ppl]!
+2025-05-20 16:35:14,046 - INFO - joeynmt.training - Example #0
+2025-05-20 16:35:14,048 - DEBUG - joeynmt.training - 	Tokenized source:     ['Vorig', 'jaar', 'liet', 'ik', 'deze', 'twee', "dia's", 'zien', 'om', 'aan', '', 'te', 'tonen', 'dat', 'de', 'poolijskap,', '', 'die', 'de', 'afgelopen', 'drie', 'miljoen', 'jaar', '', 'ongeveer', 'de', 'grootte', 'had', 'van', 'het', 'vasteland', 'van', 'de', 'VS,', '', 'met', '40%', 'gekrompen', 'was.']
+2025-05-20 16:35:14,049 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Letztes', 'Jahr', 'habe', 'ich', 'diese', 'beiden', 'Folien', 'gezeigt,', 'um', 'zu', 'veranschaulichen,', 'dass', 'die', 'arktische', 'Eiskappe,', 'die', 'für', 'annähernd', 'drei', 'Millionen', 'Jahre', 'die', 'Grösse', 'der', 'unteren', '48', 'Staaten', 'hatte,', 'um', '40', 'Prozent', 'geschrumpft', 'ist.']
+2025-05-20 16:35:14,050 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['<unk>', 'Jahre', '<unk>', '<unk>', 'ich', 'diese', 'zwei', '<unk>', '<unk>', 'um', 'zu', '<unk>', 'zu', 'zeigen,', 'dass', 'die', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 16:35:14,052 - INFO - joeynmt.training - 	Source:     Vorig jaar liet ik deze twee dia's zien om aan  te tonen dat de poolijskap,  die de afgelopen drie miljoen jaar  ongeveer de grootte had van het vasteland van de VS,  met 40% gekrompen was.
+2025-05-20 16:35:14,053 - INFO - joeynmt.training - 	Reference:  Letztes Jahr habe ich diese beiden Folien gezeigt, um zu veranschaulichen, dass die arktische Eiskappe, die für annähernd drei Millionen Jahre die Grösse der unteren 48 Staaten hatte, um 40 Prozent geschrumpft ist.
+2025-05-20 16:35:14,055 - INFO - joeynmt.training - 	Hypothesis: <unk> Jahre <unk> <unk> ich diese zwei <unk> <unk> um zu <unk> zu zeigen, dass die <unk> <unk> <unk> <unk> <unk> <unk> <unk>
+2025-05-20 16:35:14,056 - INFO - joeynmt.training - Example #1
+2025-05-20 16:35:14,057 - DEBUG - joeynmt.training - 	Tokenized source:     ['Maar', 'dit', 'onderschat', 'eigenlijk', 'de', 'ernst', 'van', 'dit', 'specifieke', 'probleem', '', 'omdat', 'het', 'niet', 'de', 'dikte', 'van', 'het', 'ijs', 'laat', 'zien.']
+2025-05-20 16:35:14,058 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Aber', 'dies', 'drückt', 'nicht', 'stark', 'genug', 'die', 'Ernsthaftigkeit', 'dieses', 'speziellen', 'Problems', 'aus,', 'da', 'es', 'nicht', 'die', 'Dicke', 'des', 'Eises', 'zeigt.']
+2025-05-20 16:35:14,059 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Aber', 'das', '<unk>', '<unk>', '<unk>', 'das', 'Problem', 'des', '<unk>', '<unk>', 'weil', 'es', 'nicht', 'die', '<unk>', 'des', '<unk>', '</s>']
+2025-05-20 16:35:14,062 - INFO - joeynmt.training - 	Source:     Maar dit onderschat eigenlijk de ernst van dit specifieke probleem  omdat het niet de dikte van het ijs laat zien.
+2025-05-20 16:35:14,064 - INFO - joeynmt.training - 	Reference:  Aber dies drückt nicht stark genug die Ernsthaftigkeit dieses speziellen Problems aus, da es nicht die Dicke des Eises zeigt.
+2025-05-20 16:35:14,065 - INFO - joeynmt.training - 	Hypothesis: Aber das <unk> <unk> <unk> das Problem des <unk> <unk> weil es nicht die <unk> des <unk>
+2025-05-20 16:35:14,067 - INFO - joeynmt.training - Example #2
+2025-05-20 16:35:14,069 - DEBUG - joeynmt.training - 	Tokenized source:     ['De', 'ijskap', 'op', 'de', 'Noordpool', 'is', 'in', 'zekere', 'zin', '', 'het', 'kloppend', 'hart', 'van', 'ons', 'globaal', 'klimaatsysteem.']
+2025-05-20 16:35:14,071 - DEBUG - joeynmt.training - 	Tokenized reference:  ['In', 'gewissem', 'Sinne', 'ist', 'die', 'arktische', 'Eiskappe', 'das', 'schlagende', 'Herz', 'unseres', 'globalen', 'Klimasystems.']
+2025-05-20 16:35:14,072 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Die', '<unk>', 'auf', 'der', '<unk>', '<unk>', 'ist', 'in', '<unk>', '<unk>', '', '<unk>', '</s>']
+2025-05-20 16:35:14,074 - INFO - joeynmt.training - 	Source:     De ijskap op de Noordpool is in zekere zin  het kloppend hart van ons globaal klimaatsysteem.
+2025-05-20 16:35:14,076 - INFO - joeynmt.training - 	Reference:  In gewissem Sinne ist die arktische Eiskappe das schlagende Herz unseres globalen Klimasystems.
+2025-05-20 16:35:14,077 - INFO - joeynmt.training - 	Hypothesis: Die <unk> auf der <unk> <unk> ist in <unk> <unk>  <unk>
+2025-05-20 16:35:14,078 - INFO - joeynmt.training - Example #3
+2025-05-20 16:35:14,080 - DEBUG - joeynmt.training - 	Tokenized source:     ['Het', 'zet', 'uit', 'in', 'de', 'winter', 'en', 'krimpt', 'in', 'de', 'zomer.']
+2025-05-20 16:35:14,080 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Sie', 'wächst', 'im', 'Winter', 'und', 'schrumpft', 'im', 'Sommer.']
+2025-05-20 16:35:14,081 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Es', '<unk>', 'aus', 'der', '<unk>', '<unk>', 'und', '<unk>', 'in', 'der', '<unk>', '</s>']
+2025-05-20 16:35:14,082 - INFO - joeynmt.training - 	Source:     Het zet uit in de winter en krimpt in de zomer.
+2025-05-20 16:35:14,084 - INFO - joeynmt.training - 	Reference:  Sie wächst im Winter und schrumpft im Sommer.
+2025-05-20 16:35:14,087 - INFO - joeynmt.training - 	Hypothesis: Es <unk> aus der <unk> <unk> und <unk> in der <unk>
+2025-05-20 16:35:14,089 - INFO - joeynmt.training - Example #4
+2025-05-20 16:35:14,090 - DEBUG - joeynmt.training - 	Tokenized source:     ['De', 'volgende', 'dia', 'die', 'ik', 'laat', 'zien', '', 'is', 'een', 'versnelde', 'versie', 'van', 'wat', 'er', 'de', 'afgelopen', '25', 'jaar', 'is', 'gebeurd.']
+2025-05-20 16:35:14,091 - DEBUG - joeynmt.training - 	Tokenized reference:  ['Die', 'nächste', 'Folie,', 'die', 'ich', 'Ihnen', 'zeige,', 'ist', 'eine', 'Zeitrafferaufnahme', 'was', 'in', 'den', 'letzten', '25', 'Jahren', 'passiert', 'ist.']
+2025-05-20 16:35:14,092 - DEBUG - joeynmt.training - 	Tokenized hypothesis: ['Die', 'nächste', '<unk>', 'die', 'ich', '<unk>', '<unk>', '<unk>', '</s>']
+2025-05-20 16:35:14,093 - INFO - joeynmt.training - 	Source:     De volgende dia die ik laat zien  is een versnelde versie van wat er de afgelopen 25 jaar is gebeurd.
+2025-05-20 16:35:14,094 - INFO - joeynmt.training - 	Reference:  Die nächste Folie, die ich Ihnen zeige, ist eine Zeitrafferaufnahme was in den letzten 25 Jahren passiert ist.
+2025-05-20 16:35:14,095 - INFO - joeynmt.training - 	Hypothesis: Die nächste <unk> die ich <unk> <unk> <unk>
+2025-05-20 16:39:24,996 - INFO - joeynmt.training - Epoch   1, Step:     2100, Batch Loss:     1.964782, Batch Acc: 0.417732, Tokens per Sec:      265, Lr: 0.000300
+2025-05-20 16:43:35,702 - INFO - joeynmt.training - Epoch   1, Step:     2200, Batch Loss:     2.110504, Batch Acc: 0.425846, Tokens per Sec:      262, Lr: 0.000300
+2025-05-20 16:47:44,459 - INFO - joeynmt.training - Epoch   1, Step:     2300, Batch Loss:     1.924636, Batch Acc: 0.425300, Tokens per Sec:      260, Lr: 0.000300
