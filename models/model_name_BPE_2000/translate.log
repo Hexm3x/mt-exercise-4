@@ -1,1 +1,16 @@
 2025-05-27 16:37:52,673 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-28 15:53:22,610 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-28 15:56:59,881 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-28 16:04:52,353 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-28 16:06:55,858 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-28 16:06:56,252 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-28 16:06:56,558 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-28 16:06:57,004 - INFO - joeynmt.helpers - Load model from C:\Users\medin\OneDrive\Dokumente\mt-exercise-4\models\model_name_BPE_2000\8000.ckpt.
+2025-05-28 16:13:30,261 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-28 16:13:30,959 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-28 16:13:31,470 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-28 16:13:31,949 - INFO - joeynmt.helpers - Load model from C:\Users\medin\OneDrive\Dokumente\mt-exercise-4\models\model_name_BPE_2000\8000.ckpt.
+2025-05-28 16:14:25,040 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-28 16:15:43,752 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-28 16:16:48,532 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-28 16:18:00,571 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
