@@ -41,7 +41,7 @@ for bleu_file in bleu_files:
 
 # Initialize PrettyTable - a small introduction can be found here: https://www.geeksforgeeks.org/creating-tables-with-prettytable-library-python/
 columns = [list_model_name, list_level, list_vocab_size, list_bleu_score]
-column_names = ["Model name", "level", "Vocabulary size", "BLEU score"]
+column_names = ["Model name", "Level", "Vocabulary size", "BLEU score"]
 
 validation_table = PrettyTable()
 

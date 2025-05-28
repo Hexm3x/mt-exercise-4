@@ -1,5 +1,5 @@
 +---------------------------+-------+-----------------+------------+
-|         Model name        | level | Vocabulary size | BLEU score |
+|         Model name        | Level | Vocabulary size | BLEU score |
 +---------------------------+-------+-----------------+------------+
 | transformer_sample_config |  word |       2004      |    5.9     |
 |    model_name_BPE_1000    |  bpe  |       1818      |    N/A     |
