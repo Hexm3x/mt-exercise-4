@@ -16,7 +16,7 @@ data: # change if language / vocab size changes
         # either use a vocabulary limit:
         # voc_limit: 32000 # Whole_word
         # or (= not both!) a file with a vocabulary built before starting the training:
-        voc_file : "nl-de-bpe-2000/joint_vocab_2000_dedu.txt" # BPE - change name if vocab size changed
+        voc_file : "models/model_name_BPE_2000/joint_vocab_2000_dedu.txt" # BPE - change name if vocab size changed
         tokenizer_type: "subword-nmt"
         tokenizer_cfg:
             pretokenizer: "none"
@@ -31,7 +31,7 @@ data: # change if language / vocab size changes
         # either use a vocabulary limit:
         # voc_limit: 32000 # Whole_word
         # or (= not both!) a file with a vocabulary built before starting the training:
-        voc_file : "nl-de-bpe-2000/joint_vocab_2000_dedu.txt" # BPE - change name if vocab size changed
+        voc_file : "models/model_name_BPE_2000/joint_vocab_2000_dedu.txt" # BPE - change name if vocab size changed
         tokenizer_type: "subword-nmt"
         tokenizer_cfg:
             pretokenizer: "none"
