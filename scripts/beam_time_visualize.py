@@ -20,7 +20,7 @@ for model, time in matches:
 plt.bar(model_list, time_list)
 
 plt.xlabel("Beam size")
-plt.ylabel("Time")
+plt.ylabel("Time [Seconds]")
 plt.title("Time per Beam size")
 plt.savefig("Time_Beam_size_plot.png", dpi=300)
 plt.close()
