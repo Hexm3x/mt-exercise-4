@@ -68,10 +68,10 @@ training:
     max_output_length: 100
     print_valid_sents: [0, 1, 2, 3, 4]
     label_smoothing: 0.3
-    save_latest_ckpt: true
     # load_model: "models/model_name_BPE_2000/10000.ckpt"  # only need this when loading from an existing one (had to reload at some point), as the vocabulary has already been built
     # src_vocab: "models/model_name_BPE_2000/src_vocab.txt"  # only need this when loading from an existing one (had to reload at some point), as the vocabulary has already been built
     # trg_vocab: "models/model_name_BPE_2000/trg_vocab.txt"  # only need this when loading from an existing one (had to reload at some point), as the vocabulary has already been built
+    save_latest_ckpt: true
 
 model:
     initializer: "xavier_uniform"

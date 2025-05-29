@@ -60,7 +60,7 @@ training:
     validation_freq: 500
     logging_freq: 100
     eval_metric: "bleu"
-    model_dir: "models/word_level_new" # reloading needed a new directory due to overwriting permissions
+    model_dir: "models/word_level" # # different name for new loads: models/word_level_new
     overwrite: False
     shuffle: True
     use_cuda: False
