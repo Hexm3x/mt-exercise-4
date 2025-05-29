@@ -43,7 +43,6 @@ testing:
     beam_size: 5
     alpha: 1.0
     ckpt_path: models/model_name_BPE_1000/3500.ckpt # the best checkpoint is inserted here as I do not have best.ckpt
-    output_path: logs/model_name_BPE_1000-test/hyp.txt # as test doesn't work, I use joeynmt translate and according to ChatGPT, I need to specify the output path in here
 
 training:
     random_seed: 42
