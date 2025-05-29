@@ -5,7 +5,7 @@ venv:
 
   ```bash
   pip install virtualenv
-
+  ```
 
 Will make a virtual environment; activate it
    ```
