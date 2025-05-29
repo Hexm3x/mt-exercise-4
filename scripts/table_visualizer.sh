@@ -5,6 +5,9 @@ base=$scripts/..
 translations=translations
 models=models
 
+visualizations=$base/visualizations
+mkdir -p $visualizations
+
 # Snippet by ChatGPT - only installing prettytable if not already installed
 if ! python3 -c "import prettytable" 2>/dev/null; then
     pip install prettytable

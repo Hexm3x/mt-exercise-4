@@ -8,6 +8,8 @@ configs=$base/configs
 
 translations=$base/translations
 
+mkdir -p $translations
+
 src=nl
 trg=de
 

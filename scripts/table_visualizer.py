@@ -39,17 +39,18 @@ for bleu_file in bleu_files:
         bleu_match = re.search(bleu_score, bleu)
         list_bleu_score.append(bleu_match.group(1) if bleu_match else "N/A")
 
+# Prettytable - taken from exercise 3
 # Initialize PrettyTable - a small introduction can be found here: https://www.geeksforgeeks.org/creating-tables-with-prettytable-library-python/
 columns = [list_model_name, list_level, list_vocab_size, list_bleu_score]
 column_names = ["Model name", "Level", "Vocabulary size", "BLEU score"]
 
-validation_table = PrettyTable()
+bleu_table = PrettyTable()
 
 # good idea of ChatGPT to use zip to reduce lines of codes and errors
 for name, column in zip(column_names, columns):
-    validation_table.add_column(name, column)
+    bleu_table.add_column(name, column)
 
 # save the data - discussion is found here: https://stackoverflow.com/questions/22431252/how-do-i-save-table-from-prettytable
-validation_BLEU_prettytable = str(validation_table)
-with open('BLEU_Table.txt', 'w') as f:
+validation_BLEU_prettytable = str(bleu_table)
+with open('visualizations/BLEU_Table.txt', 'w') as f:
     f.write(validation_BLEU_prettytable)

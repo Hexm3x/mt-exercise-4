@@ -8,6 +8,8 @@ configs=$base/configs
 
 translations=$base/translations
 
+mkdir -p $translations
+
 src=nl
 trg=de
 
@@ -19,7 +21,7 @@ device=0
 
 SECONDS=0
 
-VOCAB_SIZE=1000
+VOCAB_SIZE=1818
 model_name1=model_name_BPE_1000
 
 echo "###############################################################################"
@@ -32,7 +34,7 @@ mkdir -p $translations_sub
 CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python -m joeynmt translate $configs/$model_name1.yaml < $data/test_100k.$src > $translations_sub/test.$model_name1.$trg
 
 # trim target to match for fair BLEU
-head -n 1000 $data/test_100k.$trg > $data/cut_${VOCAB_SIZE}.$trg
+head -n $VOCAB_SIZE $data/test_100k.$trg > $data/cut_${VOCAB_SIZE}.$trg
 
 # compute BLEU score
 cat $translations_sub/test.$model_name1.$trg | sacrebleu $data/cut_${VOCAB_SIZE}.$trg | tee $translations_sub/bleu.txt

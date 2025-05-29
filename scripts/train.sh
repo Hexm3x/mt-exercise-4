@@ -18,8 +18,8 @@ logs=$base/logs
 
 model_name="transformer_sample_config" # Word level
 # To run them in one single session
-model_name_BPE_2000="model_name_BPE_2000" # BPE with vocab size = 2000
 model_name_BPE_1000="model_name_BPE_1000" # BPE with vocab size = 1000
+model_name_BPE_2000="model_name_BPE_2000" # BPE with vocab size = 2000
 
 mkdir -p $logs
 
@@ -31,8 +31,8 @@ mkdir -p $logs/$model_name_BPE_1000
 # Train:
 OMP_NUM_THREADS=$num_threads python3 -m joeynmt train $configs/$model_name.yaml > $logs/$model_name/out 2> $logs/$model_name/err
 
-#echo "time taken:"
-#echo "$SECONDS seconds"
+echo "time taken:"
+echo "$SECONDS seconds"
 
 # To run them in one single session
 # Train:
