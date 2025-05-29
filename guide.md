@@ -85,7 +85,8 @@ Evaluate BLEU scores with different beam sizes for the best model + track time:
     scripts/best_generator.sh
    ```
 
-Creates all_beam_result folder with subfolders that contain the BLEU score, sample text. Creates time_log.txt in all_beam_result that contains the time taken for generating the BLEU scores with sample sentences.  
+Creates all_beam_result folder with subfolders that contain the BLEU score, sample text.  
+Creates time_log.txt in all_beam_result that contains the time taken for generating the BLEU scores with sample sentences.  
 Beam size ranges from 1-10  
 
 bar visualizer:
